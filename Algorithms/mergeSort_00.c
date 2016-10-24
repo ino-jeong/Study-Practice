@@ -1,7 +1,14 @@
+/****************************************************************
+Merge sort practice.
+Unsorted array input by user is not impemented yet.
+Thus only for hard corded array A will be sorted and displayed.
+****************************************************************/
 #include <stdio.h>
 
-int A[8]={5,7,8,1,-10,99,1092,0};
+//specified array for public
+int A[8]={5,7,8,1,-10,99,1092,0}; 
 
+//merge function
 void merge(int* A, int p, int q, int r){
     
     int i=p, j=q+1, k=p;
@@ -38,6 +45,7 @@ void merge(int* A, int p, int q, int r){
     
 }
 
+//mergesort function. This function will call merge() for its process.
 void mergeSort(int* A, int p, int r){
     if(p<r){
         int q=(p+r)/2;
@@ -48,6 +56,7 @@ void mergeSort(int* A, int p, int r){
     }
 }
 
+//main
 int main()
 {
     int a=0;
