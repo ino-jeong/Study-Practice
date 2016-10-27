@@ -7,10 +7,10 @@ int A[8]={5,7,8,1,-10,99,1092,0};
 
 void swap(int* x, int* y){
     
-    int* temp;
-    *temp = *x;
+    int temp;
+    temp = *x;
     *x = *y;
-    *y = *temp;
+    *y = temp;
     
 }
 
