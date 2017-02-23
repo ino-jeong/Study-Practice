@@ -52,3 +52,58 @@ Node *remove_after(Node *prev){
 
 
 
+//Linked list traversal (as data value)
+//return matched node's pointer
+
+Node *find(char *word){
+    Node *p = head;
+    
+    while(p!=NULL){
+        if(strcmp(p->data, word)==0){
+            return p;
+        }
+        p = p->next;
+    }
+    return NULL;
+}
+
+
+
+//return i'th node's pointer (counting from 0)
+Node *get_node(int index){
+    if (index < 0){
+        return NULL;
+    }
+    
+    Node *p = head;
+    for(int i=0; (i<index && p!=NULL); i++){
+        p=p->next;
+    }
+    return p;
+}
+
+
+
+//add by index
+//add new node as i'th node
+//return 0 if failed, and 1 if success
+//assume head is global variable
+
+int add(int index, char *item){
+    if(index < 0){
+        return 0;
+    }
+    
+    if(index == 0){
+        add_first(item);
+        return 1;
+    }
+    
+    Node *prev = get_node(index-1); //obtain previous node of target
+    if(prev != NULL){
+        add_after(prev, item);
+        return 1;
+    }
+    
+    return 0; //adding process is failed if process reach this statement.
+} 
