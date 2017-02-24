@@ -65,7 +65,7 @@ void add_term(int c, int e, Polynomial *poly){
       
       if(p->coef == 0){
           if(q==NULL){ //this term is first term
-              poly->fist = p->next;
+              poly->first = p->next;
           }
           else{
               q->next = p->next;
@@ -84,10 +84,10 @@ void add_term(int c, int e, Polynomial *poly){
   //if new term is first term.
   if(q==NULL){
       term->next=p;
-      poly->fist=term;
+      poly->first=term;
   }
   else{
-      term->next=p
+      term->next=p;
       q->next=term;
   }
   poly->size++;
