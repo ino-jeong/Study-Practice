@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_POLYS 100
+#define BUFFER_LENGTH 100
 
 
 typedef struct term {
