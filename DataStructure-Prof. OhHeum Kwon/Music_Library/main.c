@@ -1,7 +1,11 @@
 #include <stdio.h>
-#include "string_tools.h"
 #include <stdlib.h>
 #include <string.h>
+
+#include "string_tools.h"
+#include "library.h"
+
+
 #define BUFFER_LENGTH 200
 
 void process_command();
