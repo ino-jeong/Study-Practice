@@ -10,13 +10,35 @@
 
 void process_command();
 void handle_add();
+void handle_load();
 
 int main()
 {
     initialize();
+    handle_load();
     process_command();
     
     return 0;
+}
+
+
+void handle_load(){
+    
+    char buffer[BUFFER_LENGTH];
+    
+    printf("Data file name ? : ");
+    if(read_line(stdin, buffer, BUFFER_LENGTH)<=0){
+        return;
+    }
+    
+    FILE *fp = fopen(buffer, "r");
+    if(fp == NULL){
+        printf("No such file exists.\n");
+        return;
+    }
+    
+    load(fp);
+    fclose(fp);    
 }
 
 void process_command(){
