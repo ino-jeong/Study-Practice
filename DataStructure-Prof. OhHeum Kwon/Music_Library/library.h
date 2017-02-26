@@ -1,8 +1,12 @@
 #ifndef LIBRARY_H
 #define LIBRARY_H
+
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
+
 #define NUM_CHARS 256
+#define BUFFER_LENGTH 200
 
 typedef struct artist Artist;
 typedef struct song Song;
@@ -39,6 +43,7 @@ void insert_node(Artist *ptr_artist, Snode *ptr_snode);
 void status();
 void print_artist(Artist *p);
 void print_song(Song *ptr_song);
+void load(FILE *fp);
 
 
 #endif
