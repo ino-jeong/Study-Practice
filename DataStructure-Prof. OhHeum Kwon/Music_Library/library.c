@@ -1,5 +1,7 @@
 #include "library.h"
-#include <stdio.h>
+#include "string_tools.h"
+
+
 
 Artist *artist_directory[NUM_CHARS];
 int num_index = 0;
@@ -9,6 +11,39 @@ void initialize(){
     for(i =0; i<NUM_CHARS; i++){
         artist_directory[i] = NULL;
     }
+}
+
+void load(FILE *fp){
+    
+    char buffer[BUFFER_LENGTH];
+    char *name,*title,*path;
+    
+    while(1){
+        if(read_line(fp,buffer,BUFFER_LENGTH)<=0)
+            break;
+            
+        name = strtok(buffer,"#");
+        if (strcmp(name," ")==0)
+            name == NULL;
+        else
+            name=strdup(name);
+            
+        title = strtok(buffer,"#");
+        if (strcmp(title," ")==0)
+            title == NULL;
+        else
+            title=strdup(title);
+            
+        path = strtok(buffer,"#");
+        if (strcmp(path," ")==0)
+            path == NULL;
+        else
+            path=strdup(path);
+            
+        printf("%s %s %s\n", name, title, path);
+    }
+    
+    
 }
 
 Artist *create_artist_instance(char *name){
@@ -147,7 +182,7 @@ void print_artist(Artist *p){
 }
 
 void print_song(Song *ptr_song){
-    printf("\t%d: %s, %s\n",ptr_song->title, ptr_song->path);
+    printf("\t%d: %s, %s\n",ptr_song->index, ptr_song->title, ptr_song->path);
 }
 
 //
