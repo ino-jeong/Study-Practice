@@ -13,6 +13,7 @@ void handle_add();
 
 int main()
 {
+    initialize();
     process_command();
     
     return 0;
@@ -39,8 +40,11 @@ void process_command(){
             handle_search();
         else if(strcmp(command,"remove")==0)
             handle_remove();
+        */
         else if(strcmp(command,"status")==0)
-            handle_status();
+            status();
+        
+        /*
         else if(strcmp(command,"play")==0)
             handle_play();
         else if(strcmp(command,"save")==0)
