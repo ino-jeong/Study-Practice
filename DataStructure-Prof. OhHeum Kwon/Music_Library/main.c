@@ -11,6 +11,7 @@
 void process_command();
 void handle_add();
 void handle_load();
+void handle_search();
 
 int main()
 {
@@ -55,11 +56,11 @@ void process_command(){
         command = strtok(command_line," ");
         if(strcmp(command,"add")==0)
             handle_add();
-            
-            /*
-            
+
         else if(strcmp(command,"search")==0)
             handle_search();
+        
+        /*
         else if(strcmp(command,"remove")==0)
             handle_remove();
         */
@@ -110,6 +111,25 @@ void handle_add(){
     
 }
 
+void handle_search(){
+    char name[BUFFER_LENGTH];
+    char title[BUFFER_LENGTH];
+    int title_len=0;
+    
+    printf("\tArtist : ");
+    if(read_line(stdin,name,BUFFER_LENGTH)<=0){
+        printf("\t***Artist name required***\n");
+        return;
+    }
+    printf("\tTitle : ");
+    title_len = read_line(stdin,title,BUFFER_LENGTH);
+    
+    if(title_len <= 0)
+        search_song1(name);
+    else
+        search_song2(name,title);
+    
+}
 
 
 
