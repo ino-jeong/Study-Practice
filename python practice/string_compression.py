@@ -25,4 +25,3 @@ def str_comp(input_str):
 input_str = 'aaabbcDDDDDtt'
 
 print(str_comp(input_str))
-
