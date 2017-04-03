@@ -1,6 +1,10 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
+
+# drawing cost function graph
+
+
 X = [1, 2, 3]
 Y = [1, 2, 3]
 
