@@ -17,7 +17,7 @@ Problem list (before offline lecture)
 - 9376번 - 탈옥
 - 9328번 - 열쇠
 - 1857번 - 발레리노
-- 14226번 - 이모티콘
+>- 14226번 - 이모티콘 (done)
 
 
 
