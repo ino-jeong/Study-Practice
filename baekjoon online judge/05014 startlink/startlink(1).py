@@ -31,21 +31,23 @@ def find_way(f,s,g,u,d):
     visit_hash = {}
     pos_queue = Queue()
     pos_queue.put(pos,button)
+    visit_hash[pos] = button
 
     while pos != g:
         if pos_queue.is_empty() is True:
             break
-        pos, button = pos_queue.get()
 
+        pos, button = pos_queue.get()
         if button > abs(g - s):
             break
 
-        visit_hash[pos] = button
-
         if (pos + u) <= f and (pos + u) not in visit_hash:
             pos_queue.put(pos + u, button + 1)
+            visit_hash[pos + u] = button + 1
+
         if (pos - d) >= 0 and (pos - d) not in visit_hash:
             pos_queue.put(pos - d, button + 1)
+            visit_hash[pos - d] = button + 1
 
     if g in visit_hash:
         return visit_hash[g]
