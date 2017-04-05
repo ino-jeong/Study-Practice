@@ -31,7 +31,7 @@ train = optimizer.minimize(cost)
 
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
-
+ 
 coord = tf.train.Coordinator()
 threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
