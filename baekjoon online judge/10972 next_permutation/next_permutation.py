@@ -33,21 +33,6 @@ def next_permutation(perm):
 
     return
 
-def str_to_arr(str):
-    arr = []
-
-    for s in str:
-        arr.append(s)
-
-    return arr
-
-def arr_to_str(arr):
-    str_output = ''
-
-    for a in arr:
-        str_output = str_output + str(a)
-
-    return str_output
 
 n = int(input())
 perm = input()
