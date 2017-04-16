@@ -1,3 +1,5 @@
+from sys import stdin
+
 def next_permutation(perm):
 
     i = len(perm) - 1
@@ -27,7 +29,8 @@ n = int(input())
 W = []
 
 for i in range(n):
-    line_input = input().split(' ')
+    line_input = stdin.readline().strip('\n')
+    line_input = line_input.split(' ')
     temp = []
     for j in range(n):
         temp.append(int(line_input[j]))
