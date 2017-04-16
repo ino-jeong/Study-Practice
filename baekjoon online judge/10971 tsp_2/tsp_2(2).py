@@ -1,5 +1,3 @@
-# run time error.. not success yet
-
 from sys import stdin
 
 def next_permutation(perm):
@@ -32,7 +30,7 @@ W = []
 
 for i in range(n):
     line_input = stdin.readline().strip('\n')
-    line_input = line_input.split(' ')
+    line_input = line_input.split()
     temp = []
     for j in range(n):
         temp.append(int(line_input[j]))
