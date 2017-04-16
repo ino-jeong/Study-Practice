@@ -1,3 +1,5 @@
+# run time error.. not success yet
+
 def next_permutation(perm):
 
     i = len(perm) - 1
