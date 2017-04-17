@@ -45,7 +45,7 @@ Problem list (before offline lecture)
 
 >- 9095번 - 1, 2, 3 더하기 (done)
 >- 1759번 - 암호 만들기 (done)
-- 9663번 - N-Queen
+>- 9663번 - N-Queen (checked)
 - 1987번 - 알파벳
 - 1182번 - 부분집합의 합
 - 14391번 - 종이 조각
