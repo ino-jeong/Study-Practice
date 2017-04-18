@@ -49,7 +49,7 @@ Problem list (before offline lecture)
 >- 1987번 - 알파벳 (checked)
 >- 1182번 - 부분집합의 합 (done)
 >- 14391번 - 종이 조각 (done)
-- 13460번 - 째로탈출 2
+>- 13460번 - 째로탈출 2 (checked)
 - 12100번 - 2048 (Easy)
 
 
