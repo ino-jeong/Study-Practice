@@ -13,7 +13,7 @@ C[n] = center end:
 |
 
 
-A[n] = A[n-1] + A[n-2] + 2 * B[n] + C[n-1]
+A[n] = A[n-1] + A[n-2] + 2 * B[n] + C[n-1] 
 B[n] = A[n-1] + B[n-1]
 C[n] = A[n-1] + C[n-2]
 
@@ -33,7 +33,6 @@ def tiling(n, A, B, C):
 
     return A[n]
 
-cases = int(input())
 A = {}
 A[1] = 1
 A[2] = 5
@@ -46,6 +45,7 @@ C = {}
 C[1] = 1
 C[2] = 1
 
+cases = int(input())
 for c in range(cases):
     n = int(input())
     print(tiling(n, A, B, C))

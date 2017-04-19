@@ -60,7 +60,7 @@ Problem list (before offline lecture)
 - 12101번 - 1, 2, 3 더하기 2
 >- 9520번 - NP-Hard (checked)
 >- 1767번 - N-Rook II (done)
-- 2718번 - 타일 채우기
+>- 2718번 - 타일 채우기 (done)
 - 2228번 - 구간 나누기
 - 12872번 - 플레이리스트
 - 12911번 - 좋아하는 배열
