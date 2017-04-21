@@ -62,7 +62,7 @@ Problem list (before offline lecture)
 >- 1767번 - N-Rook II (done)
 >- 2718번 - 타일 채우기 (done)
 >- 2228번 - 구간 나누기 (done)
-- 12872번 - 플레이리스트
+>- 12872번 - 플레이리스트 (checked)
 - 12911번 - 좋아하는 배열
 - 1495번 - 기타리스트
 - 5557번 - 1학년
