@@ -65,7 +65,7 @@ Problem list (before offline lecture)
 >- 12872번 - 플레이리스트 (checked)
 - 12911번 - 좋아하는 배열
 >- 1495번 - 기타리스트 (done)
-- 5557번 - 1학년
+>- 5557번 - 1학년 (done)
 - 1126번 - 같은 탑
 
 
