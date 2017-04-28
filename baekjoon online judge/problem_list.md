@@ -82,7 +82,7 @@ Problem list (before offline lecture)
 >- 1648번 - 격자판 채우기 (done)
 >- 1657번 - 두부장수 장홍준 (done)
 >- 14389번 - 4블럭 (checked)
-- 12960번 - 체스판
+>- 12960번 - 체스판 (checked)
 - 13976번 - 타일 채우기 2
 
 
