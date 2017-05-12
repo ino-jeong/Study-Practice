@@ -137,7 +137,7 @@ Problem list (before offline lecture)
 >- 2336번 - 굉장한 학생 (done)
 >- 7578번 - 공장 (done)
 >- 12016번 - 라운드 로빈 스케줄러 (연습) (done)
-- 1849번 - 순열 (연습)
+>- 1849번 - 순열 (연습) (done)
 
 
 
